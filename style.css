@@ -130,7 +130,15 @@ h1{
 
 .sub-bullet {
         margin-left: 0em;
+        margin-top: 5px;
         font-size: 20px;
+        line-height: 2;
+}
+
+.sub-sub-bullet {
+        margin-left: 0em;
+        font-size: 20px;
+        line-height: 1.5;
 }
 
 .right-bullet {
