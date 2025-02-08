@@ -1,45 +1,129 @@
 <!DOCTYPE html>
- <html> 
- <head> 
- 	<title>圓覺寺</title>
- 	<link rel="stylesheet" href="../style.css" media="screen" /> 
- 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
- </head> 
- <body> 
- 	<div id="wrapper"> 
- 		<div id="header"> 
- 			<p class="header-h"> <strong>圓覺寺</strong></p>	
-			<p class="header-text">Yuanjue Temple </p>
- 		</div>
+<html lang="zh">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>圓覺寺</title>
+    <link rel="stylesheet" href="../style.css" media="screen"> 
+    <style>
+        /* Responsive gallery layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* Adjust column size */
+            gap: 20px;
+            padding: 20px;
+        }
 
- 		<div id="content"> 
- 			<div id="content-L">
- 				<ul id="L-list"> 
-					<li><a href="../index.html">最新消息</a></li> 
- 					<li><a href="introduction.html">寺廟沿革</a></li> 
- 					<li><a href="look.html">寺廟風貌</a></li> 
+        /* Image container */
+        .gallery figure {
+            text-align: center; /* Center description text */
+            width: 100%;
+        }
+
+
+        /* Image styling */
+        .gallery img {
+            width: 100%;
+            height: 350px; /* Fixed height for uniformity */
+            object-fit: contain; /* Ensures consistent cropping */
+            object-position: top; /* Align image from the top, cut from the bottom */
+            border-radius: 5px;
+            display: block;
+        }
+
+		        /* Make certain images taller */
+		.tall-img {
+		    height: 500px; /* Increase height for selected images */
+		    object-position: top; /* Align image from the top, cut from the bottom */
+		}
+
+
+        /* Caption styling */
+        .gallery figcaption {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+    </style>
+</head> 
+<body> 
+    <div id="wrapper"> 
+        <div id="header"> 
+            <p class="header-h"><strong>圓覺寺</strong></p>    
+            <p class="header-text">Yuanjue Temple</p>
+        </div>
+
+        <div id="content"> 
+            <div id="content-L">
+                <ul id="L-list"> 
+                    <li><a href="../index.html">最新消息</a></li> 
+                    <li><a href="introduction.html">寺廟沿革</a></li> 
+                    <li><a href="look.html">寺廟風貌</a></li> 
                     <li><a href="communication.html">聯絡與交通</a></li>
- 				</ul> 
- 			</div> 
- 			<div id="content-R">
- 				<h1 class="title-1">寺廟及周圍景觀</h1>
-               	<br>
-                <img src="../images/p1.JPG" width="400px" height="250px" />
-				<img src="../images/p2.JPG" width="400px" height="250px" />
-				<br>				
-				<img src="../images/p3.JPG" width="400px" height="250px" />
-				<img src="../images/p4.JPG" width="400px" height="250px" />
-				<br>
-				<img src="../images/p5.JPG" width="197px" />
-				<img src="../images/p6.JPG" width="197px"/>
-				<img src="../images/p7.JPG" width="197px" />
-				<img src="../images/p8.JPG" width="197px"/>
-	
- 			</div>	
- 		</div> 
- 		<div id="footer"> │ 圓覺寺 │ 電話: 02-2790-9868 │ 傳真: 02-2795-6657 │<br>
-		│ 地址：114台北市內湖區碧山路39號  │  e-mail: YuanJueTemple@gmail.com  │  
- 		</div> 
- 	</div> 
- </body> 
- </html>
+                </ul> 
+            </div> 
+            <div id="content-R">
+                <h1 class="title-1">寺廟及周圍景觀</h1>
+                <br>
+                
+                <!-- Responsive Image Gallery with Captions -->
+                <div class="gallery">
+                    <figure>
+                        <figcaption>全景</figcaption>
+                        <img src="../images/全景.JPG" loading="lazy" alt="全景">
+                    </figure>
+                    <figure>
+                        <figcaption>大殿</figcaption>
+                        <img src="../images/大殿.JPG" loading="lazy" alt="大殿">
+                    </figure>
+                    <figure>
+                        <figcaption>山門</figcaption>
+                        <img src="../images/山門.JPG" loading="lazy" alt="山門">
+                    </figure>
+                    <figure>
+                        <figcaption>彌勒佛</figcaption>
+                        <img src="../images/彌勒佛.JPG" loading="lazy" alt="彌勒佛">
+                    </figure>
+                    <figure>
+                        <figcaption>三聖殿</figcaption>
+                        <img src="../images/三聖殿.JPG" loading="lazy" alt="三聖殿">
+                    </figure>
+                    <figure>
+                        <figcaption>孝思堂</figcaption>
+                        <img src="../images/孝思堂.JPG" loading="lazy" alt="孝思堂">
+                    </figure>
+                    <figure>
+                        <figcaption>寺院入口</figcaption>
+                        <img src="../images/p7.JPG" loading="lazy" alt="山門遠景">
+                    </figure>
+                    <figure>
+                        <figcaption>寺內</figcaption>
+                        <img src="../images/p2.JPG" loading="lazy" alt="寺內">
+                    </figure>
+                    <figure>
+                        <figcaption>寺務處</figcaption>
+                        <img src="../images/p8.JPG" loading="lazy" alt="寺務處" class="tall-img">
+                    </figure>
+                    <figure>
+                        <figcaption>寺院周圍</figcaption>
+                        <img src="../images/p3.JPG" loading="lazy" alt="寺院周圍">
+                    </figure>
+                    <figure>
+                        <figcaption>寺院周圍</figcaption>
+                        <img src="../images/p4.JPG" loading="lazy" alt="寺院周圍">
+                    </figure>
+                    <figure>
+                        <figcaption>寺院周圍自然景觀</figcaption>
+                        <img src="../images/p6.JPG" loading="lazy" alt="寺院周圍自然景觀">
+                    </figure>
+                </div>
+            </div>  
+        </div> 
+
+        <div id="footer"> 
+            │ 圓覺寺 │ 電話: 02-2790-9868 │ 傳真: 02-2795-6657 │<br>
+            │ 地址：114台北市內湖區碧山路39號 │ e-mail: YuanJueTemple@gmail.com │  
+        </div> 
+    </div> 
+</body> 
+</html>

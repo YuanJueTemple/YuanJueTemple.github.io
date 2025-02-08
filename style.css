@@ -1,6 +1,6 @@
            
 body { 
-        width:1100px;
+        width:1300px;
         background-color: #D2B48C;
         margin: auto;
         
@@ -11,7 +11,7 @@ body {
 
 #header { 
 	background:url(images/2.JPG) no-repeat;
-	background-size:880px 300px;
+	background-size: 1080px 300px;
 	background-position:center right;	
 	line-height:10px;
         height:150px;
@@ -62,6 +62,7 @@ body {
 } 
 #content-R{ 
         background-color: #FFF; 
+
         margin-left: 220px; 
         font-family: "微軟正黑體", "Arial Unicode MS"; 
         font-size: 17px; 
@@ -84,6 +85,12 @@ body {
         padding-left: 20px; 
         background-color: #6b7440;
 } 
+
+figure {
+    width: 100%; /* Ensures it takes the full row */
+    text-align: center;
+    margin: 20px 0;
+}
 
 
 h1{ 
@@ -173,3 +180,5 @@ h1{
 .floatright { float: right; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; } 
 
 .clearboth { clear: both; }
+
+
