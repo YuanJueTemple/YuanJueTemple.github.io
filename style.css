@@ -152,13 +152,8 @@ h1{
         padding-left: 600px
 }
 
-#content table { 
-        border-bottom-width: 5px; 
-        border-bottom-style: solid; 
-        border-bottom-color: #278092; 
-} 
 #content table tr td { 
-        padding: 5px; font-size: 12px; line-height: 1.5em; 
+        padding: 5px; font-size: 14px; line-height: 1.5em; 
         border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #278092; 
 } 
 
